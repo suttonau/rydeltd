@@ -1,8 +1,10 @@
 {
   "env": {
+      "node": true,
       "browser": true,
-      "es6": true
+      "es6": true,
   },
+  "parser": "babel-eslint",
   "extends": [
       "standard"
   ],
@@ -14,9 +16,6 @@
       "ecmaVersion": 2018,
       "sourceType": "module"
   },
-  "plugins": [
-      "standard"
-  ],
   "rules": {
       "indent": ["error", 2],
       "linebreak-style": [
@@ -35,7 +34,7 @@
           "error",
           "never"
       ],
-      "import/no-unresolved": ["ingore"],
+      "max-len": [2, 100, 4, {"ignoreUrls": true}],
       "no-console": [0],
       "import/no-unassigned-import": 0,
       "eqeqeq": ["error", "always"]
