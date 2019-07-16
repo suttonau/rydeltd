@@ -1,0 +1,36 @@
+{
+  "name": "RydeV2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "lint: "eslint ."
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-native": "0.60.3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.5.4",
+    "@babel/runtime": "7.5.4",
+    "@react-native-community/eslint-config": "0.0.3",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "24.8.0",
+    "eslint": "6.0.1",
+    "eslint-config-standard": "^13.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
