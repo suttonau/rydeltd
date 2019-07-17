@@ -3,15 +3,21 @@ import { View, TextInput, Button, StyleSheet } from 'react-native'
 
 class AddressInput extends Component {
   state = {
-
+    placeName: ''
   }
 
-  placeChangeHandler = () => {
-
+  placeChangeHandler = (v) => {
+    this.setState({
+      placeName: v
+    })
   }
 
   submit = () => {
+    if (this.state.placeName.trim() === '') {
+      return
+    }
 
+    this.props.onPlaceAdded(this.state.placeName)
   }
 
   render () {
