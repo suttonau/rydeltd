@@ -15,6 +15,8 @@ import {
   Button
 } from 'react-native'
 
+import ListItem from './src/components/ListItem'
+
 import {
   Header,
   LearnMoreLinks,
@@ -50,7 +52,7 @@ export default class App extends Component {
 
   render () {
     const places = this.state.places.map((place, index) => (
-      <Text key={index}>{place}</Text>
+      <ListItem key={index} placeName={place} />
     ))
     return (
       <View style={styles.container}>
@@ -68,9 +70,7 @@ export default class App extends Component {
           style={styles.placeButton}
           title="Add"
         />
-        <View>
-          {places}
-        </View>
+        <View style={styles.listContainer}>{places}</View>
       </View>
     )
   }
@@ -96,5 +96,8 @@ const styles = StyleSheet.create({
   },
   placeButton: {
     width: '30%'
+  },
+  listContainer: {
+    width: '100%'
   }
 })
