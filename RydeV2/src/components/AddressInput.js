@@ -27,7 +27,7 @@ class AddressInput extends Component {
           <TextInput
             style={styles.placeInput}
             placeholder="Ryde V2"
-            value={placeName}
+            value={}
             onChangeText={this.placeChangeHandler}
           />
         </View>
@@ -41,3 +41,22 @@ class AddressInput extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  inputContainer: {
+    width: '100%',
+    paddingTop: 10,
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  placeInput: {
+    width: '70%'
+  },
+  placeButton: {
+    width: '30%'
+  },
+  listContainer: {
+    width: '100%'
+  }
+})
