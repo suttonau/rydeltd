@@ -27,7 +27,7 @@ class AddressInput extends Component {
           <TextInput
             style={styles.placeInput}
             placeholder="Ryde V2"
-            value={}
+            // value={}
             onChangeText={this.placeChangeHandler}
           />
         </View>
